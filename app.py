@@ -1,9 +1,5 @@
 from flask import Flask, request, redirect, url_for, flash, jsonify
 import pickle
-from sklearn.linear_model import LinearRegression
-import json
-import pandas as pd
-import numpy as np
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
