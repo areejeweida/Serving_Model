@@ -32,7 +32,7 @@ def predict():
     return jsonify(prediction=prediction)
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def results():
     # reads the received json
     data = request.json
